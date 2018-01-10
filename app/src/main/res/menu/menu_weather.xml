@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.easyweather.bryant.easyweather.WeatherActivity">
+
+    <item android:title="@string/action_refresh"
+        android:id="@+id/action_refresh" />
+
+    <item android:title="@string/action_change_location"
+        android:id="@+id/action_change_location" />
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <Preference android:title="@string/pref_location_title"
+            android:key="loc">
+            <intent android:targetPackage="com.easyweather.bryant.easyweather"
+                android:targetClass="com.easyweather.bryant.easyweather.CityFinderActivity"
+                />
+        </Preference>
+
+        <ListPreference android:key="temp_unit"
+            android:title="@string/temp_title"
+            android:entryValues="@array/unit_values"
+            android:entries="@array/unit_names"
+            android:defaultValue="c" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:title="@string/current_location_switch_title"
+        android:key="current_location_preference" />
+
+
+</PreferenceScreen>

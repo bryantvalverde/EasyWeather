@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.easyweather.bryant.easyweather">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WeatherActivity"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WeatherPreferencesActivity"
+            android:label="@string/title_activity_weather_preferences"
+            android:parentActivityName=".WeatherActivity"
+            android:theme="@style/Theme.AppCompat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.easyweather.bryant.easyweather.WeatherActivity" />
+        </activity>
+        <activity
+            android:name=".CityFinderActivity"
+            android:label="@string/title_activity_city_finder"
+            android:parentActivityName=".WeatherActivity"
+            android:theme="@style/Theme.AppCompat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.easyweather.bryant.easyweather.WeatherActivity" />
+        </activity>
+    </application>
+
+</manifest>
